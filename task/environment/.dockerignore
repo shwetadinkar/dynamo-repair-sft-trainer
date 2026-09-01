@@ -1,0 +1,9 @@
+# Build context is environment/. Only data/ is copied into the image.
+# Patterns need the ** prefix: a bare name matches only at the context root.
+Dockerfile
+.dockerignore
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/.pytest_cache
+**/.DS_Store
