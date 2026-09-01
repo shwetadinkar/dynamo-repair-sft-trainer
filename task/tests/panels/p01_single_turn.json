@@ -1,0 +1,51 @@
+{
+  "conversations": [
+    {
+      "id": "a-01",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice Invoice caf\u00e9"
+        },
+        {
+          "role": "assistant",
+          "text": "CAF\u00c9 caf\u00e9"
+        }
+      ]
+    },
+    {
+      "id": "a-02",
+      "turns": [
+        {
+          "role": "user",
+          "text": "billing portal webhook timeout workspace"
+        },
+        {
+          "role": "assistant",
+          "text": "timeout workspace seat quota"
+        }
+      ]
+    },
+    {
+      "id": "a-03",
+      "turns": [
+        {
+          "role": "user",
+          "text": "quota sandbox"
+        },
+        {
+          "role": "assistant",
+          "text": "rollback region sync credential audit throttle"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 32,
+    "max_tokens_per_microbatch": 64,
+    "grad_accum_steps": 1,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 0
+  }
+}
