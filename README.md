@@ -28,7 +28,3 @@ using the real container and `tests/test.sh`:
 
 - shipped package: reward `0`;
 - oracle applied: reward `1`.
-
-Keep the submission repository private until benchmark ingestion is complete. The task
-must run with internet access, and publishing `solution/` beforehand would make the oracle
-retrievable during the agent run.
