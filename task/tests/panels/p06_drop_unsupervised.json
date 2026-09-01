@@ -1,0 +1,64 @@
+{
+  "conversations": [
+    {
+      "id": "f-z-survivor",
+      "turns": [
+        {
+          "role": "user",
+          "text": "retry billing"
+        },
+        {
+          "role": "assistant",
+          "text": "webhook timeout workspace"
+        }
+      ]
+    },
+    {
+      "id": "f-drop-truncated",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice export session token retry billing portal webhook timeout workspace"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry"
+        }
+      ]
+    },
+    {
+      "id": "f-drop-user-only",
+      "turns": [
+        {
+          "role": "user",
+          "text": "workspace seat quota sandbox"
+        },
+        {
+          "role": "user",
+          "text": "sandbox digest rollback"
+        }
+      ]
+    },
+    {
+      "id": "f-a-survivor",
+      "turns": [
+        {
+          "role": "assistant",
+          "text": "digest rollback"
+        },
+        {
+          "role": "user",
+          "text": "sync credential audit"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 9,
+    "max_tokens_per_microbatch": 32,
+    "grad_accum_steps": 1,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 0
+  }
+}

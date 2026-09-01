@@ -1,0 +1,37 @@
+{
+  "conversations": [
+    {
+      "id": "c-01",
+      "turns": [
+        {
+          "role": "assistant",
+          "text": "invoice export"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry billing portal webhook"
+        },
+        {
+          "role": "user",
+          "text": "portal webhook timeout"
+        },
+        {
+          "role": "assistant",
+          "text": "workspace seat"
+        },
+        {
+          "role": "user",
+          "text": "sandbox digest rollback region"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 64,
+    "max_tokens_per_microbatch": 64,
+    "grad_accum_steps": 1,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 0
+  }
+}

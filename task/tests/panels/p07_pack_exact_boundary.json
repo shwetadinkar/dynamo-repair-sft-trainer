@@ -1,0 +1,90 @@
+{
+  "conversations": [
+    {
+      "id": "g-z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice export"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry"
+        }
+      ]
+    },
+    {
+      "id": "g-a",
+      "turns": [
+        {
+          "role": "user",
+          "text": "session token"
+        },
+        {
+          "role": "assistant",
+          "text": "billing portal"
+        }
+      ]
+    },
+    {
+      "id": "g-m",
+      "turns": [
+        {
+          "role": "user",
+          "text": "retry billing"
+        },
+        {
+          "role": "assistant",
+          "text": "webhook timeout"
+        }
+      ]
+    },
+    {
+      "id": "g-b",
+      "turns": [
+        {
+          "role": "user",
+          "text": "portal webhook"
+        },
+        {
+          "role": "assistant",
+          "text": "workspace seat"
+        }
+      ]
+    },
+    {
+      "id": "g-y",
+      "turns": [
+        {
+          "role": "user",
+          "text": "timeout workspace"
+        },
+        {
+          "role": "assistant",
+          "text": "quota sandbox"
+        }
+      ]
+    },
+    {
+      "id": "g-c",
+      "turns": [
+        {
+          "role": "user",
+          "text": "seat quota"
+        },
+        {
+          "role": "assistant",
+          "text": "digest rollback"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 32,
+    "max_tokens_per_microbatch": 40,
+    "grad_accum_steps": 1,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 0
+  }
+}

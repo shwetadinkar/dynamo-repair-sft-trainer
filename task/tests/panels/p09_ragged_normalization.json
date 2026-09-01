@@ -1,0 +1,90 @@
+{
+  "conversations": [
+    {
+      "id": "j-00",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice export"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry"
+        }
+      ]
+    },
+    {
+      "id": "j-01",
+      "turns": [
+        {
+          "role": "user",
+          "text": "session token"
+        },
+        {
+          "role": "assistant",
+          "text": "billing portal"
+        }
+      ]
+    },
+    {
+      "id": "j-02",
+      "turns": [
+        {
+          "role": "user",
+          "text": "retry billing"
+        },
+        {
+          "role": "assistant",
+          "text": "webhook timeout"
+        }
+      ]
+    },
+    {
+      "id": "j-10",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice export"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry billing portal webhook timeout workspace seat quota sandbox digest rollback region sync"
+        }
+      ]
+    },
+    {
+      "id": "j-11",
+      "turns": [
+        {
+          "role": "user",
+          "text": "billing portal"
+        },
+        {
+          "role": "assistant",
+          "text": "timeout workspace seat quota sandbox digest rollback region sync credential audit throttle invoice export"
+        }
+      ]
+    },
+    {
+      "id": "j-tail",
+      "turns": [
+        {
+          "role": "user",
+          "text": "workspace seat"
+        },
+        {
+          "role": "assistant",
+          "text": "sandbox digest rollback region sync credential audit throttle invoice export session token retry billing portal webhook timeout workspace seat quota sandbox digest"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 28,
+    "max_tokens_per_microbatch": 40,
+    "grad_accum_steps": 2,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 0
+  }
+}

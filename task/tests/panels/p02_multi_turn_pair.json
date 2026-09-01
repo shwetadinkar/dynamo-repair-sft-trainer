@@ -1,0 +1,33 @@
+{
+  "conversations": [
+    {
+      "id": "b-01",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice export session"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry billing"
+        },
+        {
+          "role": "user",
+          "text": "portal webhook"
+        },
+        {
+          "role": "assistant",
+          "text": "workspace seat quota sandbox"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 48,
+    "max_tokens_per_microbatch": 64,
+    "grad_accum_steps": 1,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 0
+  }
+}

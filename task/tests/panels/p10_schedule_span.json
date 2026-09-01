@@ -1,0 +1,142 @@
+{
+  "conversations": [
+    {
+      "id": "k-00",
+      "turns": [
+        {
+          "role": "user",
+          "text": "invoice export"
+        },
+        {
+          "role": "assistant",
+          "text": "token retry"
+        }
+      ]
+    },
+    {
+      "id": "k-01",
+      "turns": [
+        {
+          "role": "user",
+          "text": "token retry"
+        },
+        {
+          "role": "assistant",
+          "text": "portal webhook"
+        }
+      ]
+    },
+    {
+      "id": "k-02",
+      "turns": [
+        {
+          "role": "user",
+          "text": "portal webhook"
+        },
+        {
+          "role": "assistant",
+          "text": "workspace seat"
+        }
+      ]
+    },
+    {
+      "id": "k-03",
+      "turns": [
+        {
+          "role": "user",
+          "text": "workspace seat"
+        },
+        {
+          "role": "assistant",
+          "text": "sandbox digest"
+        }
+      ]
+    },
+    {
+      "id": "k-04",
+      "turns": [
+        {
+          "role": "user",
+          "text": "sandbox digest"
+        },
+        {
+          "role": "assistant",
+          "text": "region sync"
+        }
+      ]
+    },
+    {
+      "id": "k-05",
+      "turns": [
+        {
+          "role": "user",
+          "text": "region sync"
+        },
+        {
+          "role": "assistant",
+          "text": "audit throttle"
+        }
+      ]
+    },
+    {
+      "id": "k-06",
+      "turns": [
+        {
+          "role": "user",
+          "text": "audit throttle"
+        },
+        {
+          "role": "assistant",
+          "text": "export session"
+        }
+      ]
+    },
+    {
+      "id": "k-07",
+      "turns": [
+        {
+          "role": "user",
+          "text": "export session"
+        },
+        {
+          "role": "assistant",
+          "text": "retry billing"
+        }
+      ]
+    },
+    {
+      "id": "k-08",
+      "turns": [
+        {
+          "role": "user",
+          "text": "retry billing"
+        },
+        {
+          "role": "assistant",
+          "text": "webhook timeout"
+        }
+      ]
+    },
+    {
+      "id": "k-09",
+      "turns": [
+        {
+          "role": "user",
+          "text": "webhook timeout"
+        },
+        {
+          "role": "assistant",
+          "text": "seat quota"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "max_seq_len": 16,
+    "max_tokens_per_microbatch": 24,
+    "grad_accum_steps": 1,
+    "base_lr": 0.0002,
+    "min_lr": 1e-05,
+    "warmup_steps": 1
+  }
+}
