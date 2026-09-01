@@ -1,0 +1,8 @@
+{
+  "max_seq_len": 32,
+  "max_tokens_per_microbatch": 60,
+  "grad_accum_steps": 2,
+  "base_lr": 0.0001,
+  "min_lr": 1e-05,
+  "warmup_steps": 1
+}

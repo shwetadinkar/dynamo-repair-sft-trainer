@@ -1,0 +1,80 @@
+[
+  {
+    "id": "s-0431",
+    "turns": [
+      {
+        "role": "user",
+        "text": "password reset help"
+      },
+      {
+        "role": "assistant",
+        "text": "Open account settings"
+      }
+    ]
+  },
+  {
+    "id": "s-0918",
+    "turns": [
+      {
+        "role": "user",
+        "text": "billing invoice missing"
+      },
+      {
+        "role": "assistant",
+        "text": "Check billing portal"
+      }
+    ]
+  },
+  {
+    "id": "s-1174",
+    "turns": [
+      {
+        "role": "user",
+        "text": "export data csv"
+      },
+      {
+        "role": "assistant",
+        "text": "Use export menu"
+      }
+    ]
+  },
+  {
+    "id": "l-0257",
+    "turns": [
+      {
+        "role": "user",
+        "text": "I tried to export my data yesterday but the download link expired immediately"
+      },
+      {
+        "role": "assistant",
+        "text": "Request new link"
+      }
+    ]
+  },
+  {
+    "id": "l-0683",
+    "turns": [
+      {
+        "role": "user",
+        "text": "our team cannot sign in after the recent update support has not replied"
+      },
+      {
+        "role": "assistant",
+        "text": "Reset session tokens"
+      }
+    ]
+  },
+  {
+    "id": "l-1502",
+    "turns": [
+      {
+        "role": "user",
+        "text": "the invoice pdf shows the wrong billing address for our organization every month"
+      },
+      {
+        "role": "assistant",
+        "text": "Update billing profile"
+      }
+    ]
+  }
+]
