@@ -1,0 +1,72 @@
+artifacts = [
+  "/app/sfttrainer/pipeline.py",
+  "/app/sfttrainer/batching.py",
+  "/app/sfttrainer/schedule.py",
+  "/app/sfttrainer/tokenizer.py",
+  "/app/sfttrainer/__init__.py",
+]
+
+[task]
+name = "dynamo/repair-sft-trainer"
+description = "Repair a supervised fine-tuning data pipeline so it conforms to its normative specification, not merely to its shipped smoke test."
+
+[metadata]
+# --- Pre-seeded for you when this repo was created — DO NOT EDIT ---
+category = "Model Training and ML Infrastructure"
+subcategory = "Fine tuning"
+# --- Fixed for this dataset — LEAVE AS-IS ---
+model_tested = "Opus-4.8"
+agent_tested = "Terminus-2"
+# --- You fill these in ---
+task_objective = ["debug", "fix"]
+artifact_type = ["codebase"]
+expert_time_estimate_hours = 3
+difficulty_explanation = """
+The visible failure is a padded-token budget overrun, but repairing it only makes the
+shipped smoke check pass. Three independent defects remain dormant because the fixtures
+contain only short, single-turn, length-uniform conversations. Finding them requires an
+audit of masking, truncation and gradient-accumulation semantics against the normative
+specification, followed by probes outside the fixture distribution.
+
+This is representative of fine-tuning infrastructure work: silent masking and weighting
+errors can reduce training signal without producing a crash or a malformed tensor. An ML
+infrastructure engineer would be expected to distinguish a local symptom from pipeline
+conformance and to verify the repaired behavior on adversarially chosen conversations.
+The workload is deliberately small and CPU-only; the difficulty is diagnosis, not compute.
+"""
+solution_explanation = """
+The packing check must include the candidate width in the prospective padded size. In the
+pipeline, every assistant turn contributes supervised content and an end marker; token
+and mask arrays retain the same prefix during truncation; and each micro-batch weight is
+its supervised-token count divided by the corresponding optimizer-step total. The
+schedule already conforms. The oracle installs the two repaired modules and reruns the
+shipped reproduction.
+"""
+verification_explanation = """
+Sixteen behavioral tests exercise ten verifier-only panels and an implementation of the
+normative formulas that imports no project modules. Coverage includes purity, schema and
+dtypes, byte-exact tokenization, arbitrary turn order, prefix truncation and dropping,
+packing order and capacity, padding, step grouping, supervised-token weighting, and the
+warmup/cosine edge cases.
+
+Pytest runs as root, but package code runs only in child processes under uid 65532. Before
+pytest starts, `/tests` and `/logs/verifier` are made root-only. Panel data is passed to
+the child on stdin, and only bounded JSON is accepted on stdout. Thus package code cannot
+read the reference or panels and cannot write the reward. Integer results and dtype names
+are exact; float results use relative tolerance `1e-7` with no absolute fallback.
+"""
+
+[verifier]
+timeout_sec = 120.0
+
+[agent]
+timeout_sec = 2400.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []
